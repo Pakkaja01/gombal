@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gombalan Sederhana</title>
+  <style>
+    body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#ffe1ef;font-family:Inter,Arial,sans-serif}
+    .box{text-align:center;background:#ffffff;padding:30px;border-radius:20px;box-shadow:0 8px 28px rgba(255,105,180,0.25)}
+    #text{font-size:22px;margin-bottom:18px;color:#111}
+    button{padding:12px 20px;font-size:16px;border:0;border-radius:12px;background:#ff4f9e;color:white;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(255,79,158,0.35)}
+    button:active{transform:translateY(1px)}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div id="text">Klik tombol di bawah…</div>
+    <button id="btn">Klik Aku</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const text = document.getElementById('text');
+
+    btn.addEventListener('click', () => {
+      text.textContent = "Kamu Cantik";
+      btn.style.display = "none";
+    });
+  </script>
+</body>
+</html>
