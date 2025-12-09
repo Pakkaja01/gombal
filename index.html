@@ -7,7 +7,8 @@
   <style>
     body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#ffe1ef;font-family:Inter,Arial,sans-serif}
     .box{text-align:center;background:#ffffff;padding:30px;border-radius:20px;box-shadow:0 8px 28px rgba(255,105,180,0.25)}
-    #text{font-size:22px;margin-bottom:18px;color:#111}
+    #text{font-size:22px;margin-bottom:18px;color:#111;animation:blink 1s infinite;} 
+    @keyframes blink{0%{opacity:1;}50%{opacity:0.3;}100%{opacity:1;}}
     button{padding:12px 20px;font-size:16px;border:0;border-radius:12px;background:#ff4f9e;color:white;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(255,79,158,0.35)}
     button:active{transform:translateY(1px)}
   </style>
